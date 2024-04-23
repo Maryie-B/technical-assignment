@@ -52,6 +52,8 @@ MongoDB will install the MongoDB Compass, which allows for collection creation a
  - Backend Server: Should be listening on port 3000.
 
 ### Troubleshooting:
+
+#### Express.js server:
 If the backend server crashes with an error indicating that the port 5000 is already in use (`Error: listen EADDRINUSE: address already in use :::3000`), this means another application is already using port 3000. To resolve this:
 1. You can find and stop the process using port 3000, or
 2. Change the port used by the backend server:
@@ -63,7 +65,7 @@ If the backend server crashes with an error indicating that the port 5000 is alr
 
 This change will require you to access the backend server at the new port, for example, `http://localhost:3000/`. 
 
-### Common Issues and Troubleshooting:
+#### MongoDB:
 If MongoDB Compass does not connect, ensure MongoDB service is running and listening on the correct port.
 If the application does not start, check that all dependencies are installed and environment variables are set correctly.
 

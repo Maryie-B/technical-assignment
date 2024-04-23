@@ -67,7 +67,6 @@ This change will require you to access the backend server at the new port, for e
 
 #### MongoDB:
 If MongoDB Compass does not connect, ensure MongoDB service is running and listening on the correct port.
-If the application does not start, check that all dependencies are installed and environment variables are set correctly.
 
 ## Application features:
 

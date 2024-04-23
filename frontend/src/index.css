@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+:root {
+  --title-font-family: 'Playfair Display';
+  --text-font-family: 'Open Sans';
+
+  --primary-color: rgba(2, 97, 96, 1);
+  --primary-color-variant: rgba(0, 159, 157, 1);
+  --primary-color-variant-light: rgba(128, 203, 236, 1);
+  --secondary-color: rgba(0, 159, 157, 1);
+  --secondary-color-variant-dark: rgba(2, 97, 96, 1);
+  --secondary-color-variant: rgba(205, 255, 235, 1);
+
+  --base-color: rgba(238, 238, 238, 1);
+  --base-color-dark: rgba(35, 41, 49, 1);
+  --error-red-primary: rgba(173, 17, 17, 1);
+  --error-red-secpndary: rgba(185, 46, 55, 1);
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+body {
+  /* background-color: var(--base-color-dark); */
+}
+

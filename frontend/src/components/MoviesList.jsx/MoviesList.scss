@@ -1,0 +1,28 @@
+.search {
+    font-size: 2rem;
+    display: flex;
+    width: 60vw;
+    max-width: 40vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+    color: var(--base-color-dark);
+    margin: 3rem auto;
+    
+    #search-bar{
+        background-color: var(--base-color);
+        border: 1px solid var(--base-color-dark);
+        padding: 0.3rem 3rem;
+        display: flex;
+        margin: 3rem 1rem 2rem;
+        width: 100%;
+        margin: 1rem 0; 
+        font-size: 2rem;
+        border-radius: 15px;
+
+        &:focus {
+            border: 1px var(--primary-color-variant) solid;
+        }
+    }
+
+}

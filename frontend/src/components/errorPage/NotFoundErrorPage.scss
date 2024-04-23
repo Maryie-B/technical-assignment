@@ -1,0 +1,37 @@
+.error-page {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: var(--base-color-dark);
+
+
+    h1 {
+        color: var(--error-red-primary);
+        font-size: 7rem;
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+
+    h2, p {
+        padding: 1rem 0;
+    }
+
+    button {
+        padding: 1rem 2rem;
+        color: var(--base-color);
+        border: none;
+        border-radius: 10px;
+        background-color: var(--primary-color-variant);
+    }
+}

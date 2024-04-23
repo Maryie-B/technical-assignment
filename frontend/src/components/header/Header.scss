@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    font-family: var(--text-font-family);
+    padding: 2rem;
+
+    .log-off-btn {
+        background-color: var(--primary-color);
+        color: var(--base-color);
+        border: none;
+        font-size: 1.5rem;
+        padding: 0.5rem 2rem
+    }
+
+    .favourites-btn {
+        background-color: var(--primary-color);
+        color: var(--base-color);
+        font-size: 1.5rem;
+        padding: 0.5rem 2rem;
+        border: none;
+    }
+
+    .logo {
+        width: 15rem;
+        height: 4rem;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+        
+        .logo {
+            margin-right: 2rem;
+        }
+    
+        .favourites-btn {
+            border-bottom: var(--base-color) solid 1px;
+        }
+
+    }
+    
+}

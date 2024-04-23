@@ -8,7 +8,7 @@ const jwtAuth = require('./jwtAuth');
 const app = express();
 app.use(express.json());
 
-PORT = 5000;
+PORT = 3000;
 
 app.use(cors());
 

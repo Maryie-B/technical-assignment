@@ -2,6 +2,8 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import '../login/Login.scss'
 
+const port = import.meta.env.VITE_PORT;
+
 const SignUp = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -57,7 +59,7 @@ const SignUp = () => {
     }
   
     try {
-      const response = await fetch('http://127.0.0.1:5000/signup', {
+      const response = await fetch(`http://127.0.0.1:${port}/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

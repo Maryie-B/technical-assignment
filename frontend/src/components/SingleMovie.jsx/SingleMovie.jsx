@@ -10,7 +10,7 @@ const SingleMovie = () => {
     const id = useParams().id;
     const navigate = useNavigate();
     const [isFavourite, setIsFavourite] = useState(false);
-    const [favouriteMovies, setFavouriteMovies] = useState([]);
+    const [_, setFavouriteMovies] = useState([]);
 
     // fetches the details for the current movie:
     const fetchDetails = async () => { 

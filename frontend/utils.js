@@ -1,6 +1,7 @@
 // const API_KEY = import.meta.env.VITE_APY_KEY;
 
 const token = import.meta.env.VITE_API_ACCESS_TOKEN;
+const port = import.meta.env.VITE_PORT;
 
 export const customFetch = async (url) => {
     const options = {
@@ -45,7 +46,7 @@ export const getFavouriteMovies = async () => {
   };
 
   try {
-      const response = await fetch('http://127.0.0.1:5000/favourites', options);
+      const response = await fetch(`http://127.0.0.1:${port}/favourites`, options);
       if (!response.ok) {
           throw new Error('Network response was not ok');
       }
@@ -69,7 +70,7 @@ export const handleRemoveFromFavourites = async (movieID, updateMoviesCallback) 
         },
     };
     try {
-      const response = await fetch(`http://127.0.0.1:5000/favourites/${movieID}`, options);
+      const response = await fetch(`http://127.0.0.1:${port}/favourites/${movieID}`, options);
       if (!response.ok) {
           throw new Error('Network response was not ok');
       }
@@ -95,7 +96,7 @@ export const handleAddFavourites = async (movie, setIsFavouriteCallback, onError
   };
 
   try {
-    const response = await fetch('http://127.0.0.1:5000/favourites', options);
+    const response = await fetch(`http://127.0.0.1:${port}/favourites`, options);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
